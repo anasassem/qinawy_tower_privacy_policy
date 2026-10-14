@@ -1,0 +1,144 @@
+# سياسة الخصوصية — تطبيق «برج القناوي»
+
+**تاريخ السريان:** 14 أكتوبر 2026
+
+تطبيق «برج القناوي» (المعرّف `com.qanawi.tower`) هو تطبيق داخلي لإدارة حسابات اتحاد ملاك برج القناوي. يتيح لإدارة البرج تسجيل اشتراكات الشقق وإصدار إيصالات الدفع، ويتيح لكل ساكن متابعة حساب شقته وإيصالاته. التطبيق مخصص لسكان البرج وإدارته فقط.
+
+توضح هذه السياسة البيانات التي يجمعها التطبيق، وسبب جمعها، وكيفية حمايتها، وحقوقك تجاهها.
+
+## 1. البيانات التي نجمعها
+
+### بيانات تقدّمها أنت عند التسجيل
+- الاسم بالكامل
+- البريد الإلكتروني
+- رقم الموبايل
+- الشقة التي اخترتها
+- كلمة المرور: تُدار بالكامل عبر خدمة Firebase Authentication، ولا نستطيع نحن الاطلاع عليها.
+
+### بيانات تسجّلها إدارة البرج
+- بيانات الشقة: الكود، والدور، والجناح، واسم المالك أو الساكن، وحالة الإشغال (ساكن، مؤجرة، مسافر...).
+- الاشتراكات الشهرية والمستحقات الأخرى، مثل مساهمة المصاعد والكاميرات والمتبقي من سنوات سابقة.
+- المدفوعات والإيصالات: المبلغ، والتاريخ، وطريقة الدفع، والشهور المسددة، والملاحظات.
+
+### بيانات تقنية
+- **رمز الإشعارات (FCM Token):** معرّف يولّده نظام الإشعارات لجهازك، ونستخدمه فقط لإرسال إشعارات التطبيق إليك.
+- **رقم إصدار التطبيق:** يُقرأ على جهازك لمعرفة ما إذا كان التطبيق يحتاج إلى تحديث، ولا يُرسل أو يُخزّن.
+
+### ما لا نجمعه
+لا يجمع التطبيق موقعك الجغرافي، ولا يصل إلى الكاميرا أو الصور أو جهات الاتصال. لا يحتوي على إعلانات، ولا يستخدم أدوات تتبّع أو تحليلات.
+
+## 2. كيف نستخدم البيانات
+- إنشاء حسابك والتحقق من أنك من سكان البرج وربطك بشقتك.
+- عرض حساب شقتك: الشهور المدفوعة والمتأخرة والإيصالات.
+- إرسال إشعارات تخص حسابك، مثل استلام دفعة أو تفعيل الحساب، وإعلانات عامة من إدارة البرج.
+- تمكين الإدارة من متابعة التحصيل وحسابات الشقق.
+
+لا نبيع بياناتك، ولا نستخدمها لأغراض تسويقية أو إعلانية.
+
+## 3. من يستطيع رؤية بياناتك
+- **أنت:** ترى بيانات شقتك وإيصالاتك فقط، ولا ترى بيانات أي شقة أخرى.
+- **إدارة البرج:** ترى بيانات كل الشقق والسكان المسجلين لأغراض الإدارة والتحصيل.
+- **مزودو الخدمة:**
+  - **Google Firebase** (Authentication و Cloud Firestore و Cloud Messaging) لتخزين البيانات وتسجيل الدخول وإرسال الإشعارات. راجع [سياسة خصوصية Google](https://policies.google.com/privacy).
+  - **خادم إرسال الإشعارات** الخاص بالتطبيق: يستقبل نص الإشعار ورمز الإشعارات لجهازك فقط، لتمرير الإشعار إلى Firebase Cloud Messaging.
+
+قد نفصح عن البيانات إذا طلبتها جهة قانونية مختصة وفقًا للقانون.
+
+## 4. حماية البيانات
+- كل الاتصالات بين التطبيق والخوادم مشفّرة (HTTPS/TLS).
+- قواعد الأمان في قاعدة البيانات تمنع أي ساكن من قراءة بيانات غيره أو تعديل أي حسابات أو إيصالات. التعديل متاح لإدارة البرج فقط.
+- الإيصالات لا تُحذف عند إلغائها، بل تُعلَّم «ملغاة» حفاظًا على دقة السجلات.
+
+## 5. مدة الاحتفاظ بالبيانات
+- نحتفظ ببيانات حسابك طالما الحساب نشط.
+- سجلات الشقق والمدفوعات والإيصالات جزء من السجلات المالية لاتحاد الملاك، ويُحتفظ بها حتى بعد حذف حساب الساكن لأنها تخص الشقة وليس الحساب الشخصي.
+
+## 6. حقوقك وحذف الحساب
+يمكنك في أي وقت:
+- طلب نسخة من بياناتك الشخصية.
+- طلب تصحيح بياناتك، مثل الاسم أو رقم الموبايل أو الشقة.
+- طلب حذف حسابك.
+
+لطلب أي من ذلك، تواصل مع إدارة البرج على البريد المذكور أدناه من البريد المسجل في حسابك. عند حذف الحساب نحذف بياناتك الشخصية: الاسم، والبريد، ورقم الموبايل، ورمز الإشعارات، وحساب تسجيل الدخول. يتم ذلك خلال 30 يومًا على الأكثر.
+
+## 7. الأطفال
+التطبيق غير موجّه للأطفال دون 13 عامًا، ولا نجمع بياناتهم عن قصد.
+
+## 8. التعديلات على هذه السياسة
+قد نحدّث هذه السياسة من وقت لآخر. ننشر النسخة المحدّثة في هذه الصفحة مع تعديل تاريخ السريان، ونبلغك داخل التطبيق إذا كان التغيير جوهريًا.
+
+## 9. التواصل
+اتحاد ملاك برج القناوي
+anasasim261@gmail.com
+---
+
+# Privacy Policy — "Qanawi Tower" App
+
+**Effective date:** October 14, 2026
+
+The "Qanawi Tower" app (`com.qanawi.tower`) is an internal app for managing the accounts of the Qanawi Tower owners' association. Building management uses it to record each unit's fees and issue payment receipts. Each resident uses it to follow their own unit's account and receipts. The app is intended only for the tower's residents and management.
+
+## 1. Data we collect
+
+**Data you provide when you register**
+- Full name
+- Email address
+- Mobile number
+- The unit you select
+- Password: handled entirely by Firebase Authentication. We cannot see it.
+
+**Data entered by building management**
+- Unit details: code, floor, wing, owner/resident name, and occupancy status.
+- Monthly fees and other charges, such as elevator and camera contributions or a balance carried over from previous years.
+- Payments and receipts: amount, date, payment method, months covered, and notes.
+
+**Technical data**
+- **Push notification token (FCM token):** an identifier the notification system creates for your device. We use it only to send you this app's notifications.
+- **App version number:** read on your device to check whether an update is required. It is not sent or stored.
+
+**What we do not collect**
+The app does not collect your location and does not access your camera, photos, or contacts. It contains no ads and no analytics or tracking tools.
+
+## 2. How we use data
+- To create your account, confirm that you are a resident, and link you to your unit.
+- To show your unit's account: paid and overdue months, and your receipts.
+- To send notifications about your account (such as a received payment or account activation) and general announcements from management.
+- To let management track collections and unit accounts.
+
+We do not sell your data or use it for marketing or advertising.
+
+## 3. Who can see your data
+- **You:** only your own unit's data and receipts. You cannot see any other unit.
+- **Building management:** all units and registered residents, for administration and collection.
+- **Service providers:**
+  - **Google Firebase** (Authentication, Cloud Firestore, Cloud Messaging), for storage, sign-in, and notifications. See [Google's Privacy Policy](https://policies.google.com/privacy).
+  - **The app's notification relay server:** receives only the notification text and your device's notification token, to pass the notification to Firebase Cloud Messaging.
+
+We may disclose data if a competent legal authority lawfully requires it.
+
+## 4. Security
+- All traffic between the app and the servers is encrypted (HTTPS/TLS).
+- Database security rules prevent a resident from reading another unit's data or changing any account or receipt. Only management can make changes.
+- Receipts are never deleted. A cancelled receipt is kept and marked "void" so the records stay accurate.
+
+## 5. Retention
+- We keep your account data for as long as your account is active.
+- Unit, payment, and receipt records are part of the association's financial records. They are kept after a resident account is deleted, because they belong to the unit and not to the personal account.
+
+## 6. Your rights and account deletion
+At any time, you can ask us to:
+- give you a copy of your personal data;
+- correct your data, such as your name, mobile number, or unit;
+- delete your account.
+
+To make a request, email building management at the address below from the email registered on your account. When we delete an account, we delete your personal data: name, email, mobile number, notification token, and sign-in account. We do this within 30 days at most.
+
+## 7. Children
+The app is not directed at children under 13, and we do not knowingly collect their data.
+
+## 8. Changes to this policy
+We may update this policy. We publish the updated version on this page with a new effective date, and we notify you in the app if a change is significant.
+
+## 9. Contact
+Qanawi Tower Owners' Association
+Email: anasasim261@gmail.com
